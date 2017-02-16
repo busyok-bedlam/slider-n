@@ -1,0 +1,312 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 11, ../sass/screen.sass */
+* {
+  box-sizing: border-box;
+}
+/* line 13, ../sass/screen.sass */
+* body {
+  background: #91e5e4;
+  overflow-y: hidden;
+}
+/* line 18, ../sass/screen.sass */
+* body .slider {
+  width: 900px;
+  margin: 10px auto;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+}
+/* line 26, ../sass/screen.sass */
+* body .slider input {
+  display: none;
+}
+/* line 29, ../sass/screen.sass */
+* body .slider #but1:checked ~ .controls label:nth-child(2),
+* body .slider #but2:checked ~ .controls label:nth-child(3),
+* body .slider #but3:checked ~ .controls label:nth-child(4),
+* body .slider #but4:checked ~ .controls label:nth-child(5),
+* body .slider #but5:checked ~ .controls label:nth-child(6),
+* body .slider #but6:checked ~ .controls label:nth-child(7),
+* body .slider #but7:checked ~ .controls label:nth-child(8),
+* body .slider #but8:checked ~ .controls label:nth-child(9),
+* body .slider #but9:checked ~ .controls label:nth-child(10),
+* body .slider #but10:checked ~ .controls label:nth-child(11),
+* body .slider #but11:checked ~ .controls label:nth-child(12),
+* body .slider #but12:checked ~ .controls label:nth-child(13),
+* body .slider #but13:checked ~ .controls label:nth-child(14),
+* body .slider #but14:checked ~ .controls label:nth-child(15),
+* body .slider #but15:checked ~ .controls label:nth-child(16),
+* body .slider #but16:checked ~ .controls label:nth-child(17),
+* body .slider #but17:checked ~ .controls label:nth-child(18),
+* body .slider #but18:checked ~ .controls label:nth-child(19),
+* body .slider #but19:checked ~ .controls label:nth-child(20),
+* body .slider #but20:checked ~ .controls label:nth-child(1) {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 25px;
+  border-color: transparent transparent transparent black;
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  display: block;
+}
+/* line 63, ../sass/screen.sass */
+* body .slider #but1:checked ~ .controls label:nth-child(20),
+* body .slider #but2:checked ~ .controls label:nth-child(1),
+* body .slider #but3:checked ~ .controls label:nth-child(2),
+* body .slider #but4:checked ~ .controls label:nth-child(3),
+* body .slider #but5:checked ~ .controls label:nth-child(4),
+* body .slider #but6:checked ~ .controls label:nth-child(5),
+* body .slider #but7:checked ~ .controls label:nth-child(6),
+* body .slider #but8:checked ~ .controls label:nth-child(7),
+* body .slider #but9:checked ~ .controls label:nth-child(8),
+* body .slider #but10:checked ~ .controls label:nth-child(9),
+* body .slider #but11:checked ~ .controls label:nth-child(10),
+* body .slider #but12:checked ~ .controls label:nth-child(11),
+* body .slider #but13:checked ~ .controls label:nth-child(12),
+* body .slider #but14:checked ~ .controls label:nth-child(13),
+* body .slider #but15:checked ~ .controls label:nth-child(14),
+* body .slider #but16:checked ~ .controls label:nth-child(15),
+* body .slider #but17:checked ~ .controls label:nth-child(16),
+* body .slider #but18:checked ~ .controls label:nth-child(17),
+* body .slider #but19:checked ~ .controls label:nth-child(18),
+* body .slider #but20:checked ~ .controls label:nth-child(19) {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 25px;
+  border-color: transparent black transparent transparent;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  display: block;
+}
+/* line 97, ../sass/screen.sass */
+* body .slider #but1:checked ~ .slides .overflow .slide.slide1,
+* body .slider #but2:checked ~ .slides .overflow .slide.slide2,
+* body .slider #but3:checked ~ .slides .overflow .slide.slide3,
+* body .slider #but4:checked ~ .slides .overflow .slide.slide4,
+* body .slider #but5:checked ~ .slides .overflow .slide.slide5,
+* body .slider #but6:checked ~ .slides .overflow .slide.slide6,
+* body .slider #but7:checked ~ .slides .overflow .slide.slide7,
+* body .slider #but8:checked ~ .slides .overflow .slide.slide8,
+* body .slider #but9:checked ~ .slides .overflow .slide.slide9,
+* body .slider #but10:checked ~ .slides .overflow .slide.slide10,
+* body .slider #but11:checked ~ .slides .overflow .slide.slide11,
+* body .slider #but12:checked ~ .slides .overflow .slide.slide12,
+* body .slider #but13:checked ~ .slides .overflow .slide.slide13,
+* body .slider #but14:checked ~ .slides .overflow .slide.slide14,
+* body .slider #but15:checked ~ .slides .overflow .slide.slide15,
+* body .slider #but16:checked ~ .slides .overflow .slide.slide16,
+* body .slider #but17:checked ~ .slides .overflow .slide.slide17,
+* body .slider #but18:checked ~ .slides .overflow .slide.slide18,
+* body .slider #but19:checked ~ .slides .overflow .slide.slide19,
+* body .slider #but20:checked ~ .slides .overflow .slide.slide20 {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+  transition: transform ease-in-out 1s, opacity ease-in-out 0.3s;
+}
+/* line 122, ../sass/screen.sass */
+* body .slider .slides {
+  padding: 5px;
+  box-shadow: 0 0 10px black;
+  height: 600px;
+  border-radius: 10px;
+}
+/* line 130, ../sass/screen.sass */
+* body .slider .slides .overflow {
+  height: 99%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+/* line 137, ../sass/screen.sass */
+* body .slider .slides .overflow .slide {
+  width: 100%;
+  height: 600px;
+  background-color: #cbff97;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -2;
+  transform: scale(1.2);
+  transition: transform ease-in-out 1s, opacity 0.5s;
+}
+/* line 149, ../sass/screen.sass */
+* body .slider .slides .overflow .slide1 {
+  background-image: url(1.jpg);
+}
+/* line 151, ../sass/screen.sass */
+* body .slider .slides .overflow .slide2 {
+  background-image: url("30.jpg");
+}
+/* line 153, ../sass/screen.sass */
+* body .slider .slides .overflow .slide3 {
+  background-image: url("45.jpg");
+  background-size: cover;
+}
+/* line 156, ../sass/screen.sass */
+* body .slider .slides .overflow .slide4 {
+  background-image: url("48.jpg");
+  background-size: cover;
+}
+/* line 159, ../sass/screen.sass */
+* body .slider .slides .overflow .slide5 {
+  background-image: url("26.jpg");
+  background-size: cover;
+}
+/* line 162, ../sass/screen.sass */
+* body .slider .slides .overflow .slide6 {
+  background-image: url("6.jpg");
+  background-size: cover;
+}
+/* line 165, ../sass/screen.sass */
+* body .slider .slides .overflow .slide7 {
+  background-image: url("36.jpg");
+  background-size: cover;
+}
+/* line 168, ../sass/screen.sass */
+* body .slider .slides .overflow .slide8 {
+  background-image: url("8.jpg");
+}
+/* line 170, ../sass/screen.sass */
+* body .slider .slides .overflow .slide9 {
+  background-image: url("9.jpg");
+}
+/* line 172, ../sass/screen.sass */
+* body .slider .slides .overflow .slide10 {
+  background-image: url("10.jpg");
+}
+/* line 174, ../sass/screen.sass */
+* body .slider .slides .overflow .slide11 {
+  background-image: url("11.jpg");
+}
+/* line 176, ../sass/screen.sass */
+* body .slider .slides .overflow .slide12 {
+  background-image: url("12.jpg");
+}
+/* line 178, ../sass/screen.sass */
+* body .slider .slides .overflow .slide13 {
+  background-image: url("66.jpg");
+}
+/* line 180, ../sass/screen.sass */
+* body .slider .slides .overflow .slide14 {
+  background-image: url("14.jpg");
+}
+/* line 182, ../sass/screen.sass */
+* body .slider .slides .overflow .slide15 {
+  background-image: url("15.jpg");
+  background-size: cover;
+}
+/* line 185, ../sass/screen.sass */
+* body .slider .slides .overflow .slide16 {
+  background-image: url("16.jpg");
+  background-size: cover;
+}
+/* line 188, ../sass/screen.sass */
+* body .slider .slides .overflow .slide17 {
+  background-image: url("39.jpg");
+  background-size: cover;
+}
+/* line 191, ../sass/screen.sass */
+* body .slider .slides .overflow .slide18 {
+  background-image: url("18.jpg");
+}
+/* line 193, ../sass/screen.sass */
+* body .slider .slides .overflow .slide19 {
+  background-image: url("19.jpg");
+}
+/* line 195, ../sass/screen.sass */
+* body .slider .slides .overflow .slide20 {
+  background-image: url("53.jpg");
+}
+/* line 199, ../sass/screen.sass */
+* body .slider .controls label {
+  opacity: 0.5;
+}
+/* line 202, ../sass/screen.sass */
+* body .slider .controls label:hover {
+  opacity: 0.8;
+}
+/* line 204, ../sass/screen.sass */
+* body .slider .controls label:active {
+  opacity: 1;
+}
